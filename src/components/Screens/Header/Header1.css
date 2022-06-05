@@ -1,0 +1,127 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+nav {
+	 background: #008eeeff; 
+	background-color: aqua;
+	height: 80px;
+	width: 100%;
+}
+label.logo {
+	color: rgb(29, 28, 28);
+	font-size: 2rem;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: rgb(26, 22, 22);
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+} */
+* {
+	margin: 0;
+	padding: 0;
+}
+/* .main {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.5) 50%,
+			rgba(0, 0, 0, 0.5) 50%
+		),
+		url(background.jpg);
+	background-position: center;
+	background-size: cover;
+	opacity: 0.7;
+} */
+
+.nav {
+	width: 100%;
+	height: 75px;
+	margin: auto;
+}
+.icon {
+	width: 300px;
+	height: 70px;
+	float: left;
+}
+
+.logo {
+	color: white;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+	padding-left: 20px;
+	padding-top: 10px;
+	float: left;
+	cursor: pointer;
+}
+.icon:hover {
+	background: fixed;
+}
+.logo:hover {
+	background: fixed;
+}
+.menu {
+	width: 400px;
+	height: 70px;
+	float: left;
+}
+.menu:hover {
+	background: fixed;
+}
+ul {
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul:hover {
+	background: fixed;
+}
+ul li {
+	list-style: none;
+	float: left;
+	margin-top: 27px;
+	margin-left: 55px;
+	font-size: 15px;
+}
+ul li:hover {
+	background: fixed;
+}
+
+ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: aliceblue;
+	transition: 0.5 ease-in-out;
+	cursor: pointer;
+}
+
+ul li a:hover {
+	color: rgb(185, 79, 8);
+	background: fixed;
+}
+.nav:hover {
+	background: fixed;
+}
