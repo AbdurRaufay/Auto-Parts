@@ -1,0 +1,395 @@
+.auth__form {
+    // @media screen and (max-width: 1400px) and (min-width: 768px){
+    //   &__spec{ height: 100vh; }
+    // }
+    height: 100vh;
+    &__bg {
+      width: 100%;
+      height: 100vh;
+      background-color: #2e73ec;
+      border-bottom-right-radius: 140px;
+      @media (max-width: 767.98px) {
+        border-bottom-right-radius: 46px;
+        width: 100%;
+        &__mobile {
+          position: relative;
+          width: 85%;
+          height: 85%;
+          &__obg{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+          }
+          &__lglockmob{
+            position: absolute;
+            width: 37%;
+            height: 70%;
+            left: 35%;
+            top: 15%;
+          }
+          &__crossmb {
+            position: absolute;
+            width: 8%;
+            bottom: -5%;
+            left: -4%;
+          }
+          &__squaremb {
+            position: absolute;
+            width: 6%;
+            top: -3%;
+            left: -2%;
+          }
+          &__regmobile {
+            position: absolute;
+            width: 65%;
+            left: 18%;
+            top: 11%;
+          }
+        }
+      }
+      @media (max-width: 650px) {
+        height: 460px;
+      }
+      @media (max-width: 550px) {
+        height: 390px;
+      }
+      @media (max-width: 450px) {
+        height: 300px;
+      }
+      &__rgman--img {
+        width: 55%;
+        margin: auto;
+        @media (max-width: 991.98px) {
+          width: 60%;
+        }
+      }
+      &__middle--img {
+        position: relative;
+        width: 75%;
+        height: 75vh;
+        @media (max-width: 991.98px) {
+          width: 70%;
+          height: 70vh;
+        }
+      }
+      &__middle__square {
+        position: absolute;
+        top: 15%;
+        left: 8%;
+      }
+      &__cross {
+        position: absolute;
+        top: 7%;
+        left: 15%;
+      }
+      &__regyoutube--img {
+        position: absolute;
+        top: 420px;
+        right: 10%;
+        width: 60px;
+        @media (max-width: 1000px) {
+          width: 40px;
+        }
+      }
+      &__lgN {
+        position: absolute;
+        width: 8%;
+        object-fit: cover;
+        top: 21%;
+        left: 19%;
+        @media (max-width: 991.98px) {
+          top: 25%;
+        }
+      }
+      &__lglock--img {
+        width: 70%;
+      }
+      @media (min-width: 1700px){ &__lglock--img { width: 100%; } }
+      &__dotted--img {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        width: 9%;
+      }
+      &__halfsqr--img {
+        position: absolute;
+        bottom: 100px;
+        width: 10%;
+        right: 10px;
+      }
+      @media screen and (max-width: 2732px) and (min-width: 1700px){
+        &__middle__square {
+          width: 12%;
+        }
+      }
+    }
+    .auth__form {
+      &__rightsection {
+        width: 70%;
+        align-self: center;
+        @media (max-width: 767.98px) {
+          width: 90%;
+        }
+        &__head {
+          font-family: DM Sans;
+          font-style: normal;
+          font-size: 40px;
+          font-weight: 700;
+          color: #2d3746;
+          @media (max-width: 991.98px) {
+            font-size: 30px;
+          }
+        }
+        &__input {
+          border-radius: 10px;
+          background: #f7f8fa;
+          border: 1px solid #dde3ed;
+          border-radius: 12px;
+          padding: 25px 12px;
+          margin-top: 15px;
+          &:focus{
+            outline: none !important;
+            background: none !important;
+            box-shadow:  none !important;          
+          }
+        }
+        &__rememberme {
+          color: #939393;
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+        }
+        &__forgotpass {
+          & a {
+            color: #939393;
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+        &__passwordinput--icon {
+          margin-top: -37px;
+          margin-left: 92.6%;
+        }
+        &__signinbtn {
+          border-radius: 12px;
+          border: none;
+          background: #2e73ec;
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 18px;
+          padding: 18px 12px;
+          &:hover{
+          background-color: #3e73ec !important;
+          }
+          &:focus {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+          }
+        }
+        &__dntaccount {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          color: #909197;
+          @media (max-width: 767.98px) {
+            margin-bottom: 15px;
+          }
+        }
+        &__link {
+          font-weight: bold;
+          color: #26488f;
+        }
+        &__withemail--head {
+          position: relative;
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          color: #858891;
+          font-size: 14px;
+          line-height: 150%;
+          & span {
+            background-color: white;
+          }
+          &::before {
+            content: "";
+            display: block;
+            width: 120px;
+            height: 2px;
+            background: #dfe0e6;
+            position: absolute;
+            left: 150;
+            top: 50%;
+            margin-left: 21%;
+            z-index: -3;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 120px;
+            height: 2px;
+            background: #dfe0e6;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-right: 21%;
+            z-index: -3;
+          }
+        }
+        &__googlebtn {
+          border: 1px solid #dfe0e5;
+          border-radius: 5px;
+          padding: 4px 0px;
+          cursor: pointer;
+          &--span {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #858891;
+          }
+        }
+        &__checkbox--input {
+          width: 18px;
+          height: 24px;
+          margin-top: -1px;
+        }
+        &__checkbox__label {
+          // margin-left: 35px;
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.1rem;
+          line-height: 21px;
+          color: #030229;
+          margin-left: 10px;
+          &--link {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.1rem;
+            line-height: 21px;
+          }
+          &--span {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.1rem;
+            line-height: 21px;
+            margin-right: 5px;
+          }
+        }
+        @media screen and (max-width: 992px) and (min-width: 768px){
+          &__rememberme {
+            font-size: 13px;
+          }
+          &__forgotpass {
+            & a {
+              font-size: 13px;
+            }
+          }
+          &__passwordinput--icon {
+            margin-left: 89%;
+          }
+        }
+        @media screen and (max-width: 2732px) and (min-width: 1700px){
+          &__head {
+            font-size: 47px;
+          }
+          &__input {
+            padding: 35px 12px;
+            font-size: 1.5rem;
+          }
+          &__passwordinput--icon {
+            margin-top: -45px;
+            margin-bottom: 3%;
+          }
+          &__rememberme {
+            font-size: 20px;
+          }
+          &__forgotpass {
+            & a {
+              font-size: 20px;
+            }
+          }
+          &__signinbtn {
+            font-size: 20px;
+            padding: 23px 12px;
+          }
+          &__withemail--head {
+            & span {
+              font-size: 1.2rem;
+            }
+          }
+          &__googlebtn {
+            padding: 7px 0px;
+            &--span {
+              font-size: 15px;
+            }
+          }
+          &__dntaccount {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  
+  .modal-content {
+    border-radius: 16px;
+  }
+  .modal__head {
+    font-weight: "DM Sans";
+    color: #000000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+  }
+  .modal__success--img {
+    width: 195px;
+    height: 195px;
+  }
+  
+  #signup_btn{
+    pointer-events: none;
+  }
+  
+  .modal__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    font-weight: 700;
+    width: 80%;
+    font-family: "DM Sans";
+    background: #2e73ec;
+    border-radius: 12px;
+    border: none;
+  
+  }
+  @media (max-width: 767.98px) {
+    .modal__head {
+      font-size: 24px;
+    }
+    .modal__success--img {
+      width: 132px;
+      height: 132px;
+    }
+    .authcongrats__modalbody{
+      padding: 50px 0px!important ;
+    }
+  }
+  
+  

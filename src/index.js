@@ -1,13 +1,14 @@
-import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { Provider } from "react-redux";
-import store from "./store";
-
+import React from "react";
+import "../src/assets/sass/auth.scss"
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 ReactDOM.render(
-	<Provider store={store}>
+	<React.StrictMode>
 		<App />
-	</Provider>,
+		<ToastContainer autoClose={3000} />
+		</React.StrictMode>,
 	document.getElementById("root")
 );
